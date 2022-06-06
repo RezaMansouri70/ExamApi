@@ -48,6 +48,7 @@ namespace ApplicationServices.Services.UserService
                 Password = hashpassword
             };
             _userRepository.Insert(user);
+            _userRepository.SaveChanges();
             return user;
         }
     }

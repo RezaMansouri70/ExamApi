@@ -9,7 +9,6 @@ namespace DomainClass.UserExam
 {
     public interface IUserRepository : IRepository<User>
     {
-        void Insert(User entity);
         User GetByMobile(string mobile);
 
     }
