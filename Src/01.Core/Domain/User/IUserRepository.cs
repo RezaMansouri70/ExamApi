@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DomainClass.UserExam
 {
-    public interface IUserRepository 
+    public interface IUserRepository : IRepository<User>
     {
         void Insert(User entity);
         User GetByMobile(string mobile);

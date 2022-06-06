@@ -9,23 +9,16 @@ using System.Threading.Tasks;
 namespace DataLayer.SqlServer.Repositories
 {
 
-    public class UserRepository : IUserRepository
+    public class UserRepository : EfRepository<User>, IUserRepository
     {
         ApplicationContext _dbContext;
-        public UserRepository(ApplicationContext dbContext)
+        public UserRepository(ApplicationContext DbContext) : base(DbContext)
         {
-            _dbContext = dbContext;
+            _dbContext = DbContext;
         }
-
-
-
         public User GetByMobile(string mobile) => _dbContext.Users.FirstOrDefault(c => c.Mobile == mobile);
 
-        public void Insert(User entity)
-        {
 
-            _dbContext.Users.Add(entity);
-            _dbContext.SaveChanges();
-        }
     }
+
 }
