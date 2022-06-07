@@ -12,17 +12,13 @@ namespace DataLayer.SqlServer.Common
     {
         public DbSet<UserExam> UserExams { get; set; }
         public DbSet<User> Users { get; set; }
-
         public ApplicationContext(DbContextOptions options) : base(options)
         {
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
             modelBuilder.Entity<UserExam>().HasQueryFilter(c => c.IsDeleted == false);
-
-
             base.OnModelCreating(modelBuilder);
         }
     }
