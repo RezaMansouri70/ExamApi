@@ -10,14 +10,8 @@ namespace ApplicationServices.Services.UserService
 {
     public interface IUserService
     {
-
         bool CanLogon(LoginUserDto loginModel);
-
         User Register(AddUserDto addUserModel);
-
         User GetUserByMobile(string mobile);
-
-
-
     }
 }
