@@ -18,13 +18,12 @@ namespace ApplicationServices.Services.UserService
             _userRepository = userRepository;
         }
 
-        public bool CanLogon(LoginUserDto loginModel)
+        public bool CanLogin(LoginUserDto loginModel)
         {
             var user = _userRepository.GetByMobile(loginModel.Mobile);
             if (user != null) 
             {
-                if (Security.SecurePasswordHasher.Verify(loginModel.Password, user.Password))
-                    return true;
+                return Security.SecurePasswordHasher.Verify(loginModel.Password, user.Password);
             }
             return false;
         }

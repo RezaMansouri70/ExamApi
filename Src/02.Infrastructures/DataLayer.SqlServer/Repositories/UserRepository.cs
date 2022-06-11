@@ -16,9 +16,10 @@ namespace DataLayer.SqlServer.Repositories
         {
             _dbContext = DbContext;
         }
-        public User GetByMobile(string mobile) => _dbContext.Users.FirstOrDefault(c => c.Mobile == mobile);
-
-
+        public User GetByMobile(string mobile)
+        {
+            return _dbContext.Users.SingleOrDefault(c => c.Mobile == mobile);
+        }
     }
 
 }

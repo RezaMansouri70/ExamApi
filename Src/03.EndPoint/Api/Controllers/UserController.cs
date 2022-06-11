@@ -39,31 +39,26 @@ namespace Api.Controllers
         [HttpPost("Login")]
         public IActionResult Login([FromBody] LoginUserDto login)
         {
-            IActionResult response = Unauthorized();
 
-
-            if (_userService.CanLogon(login))
+            if (_userService.CanLogin(login))
             {
-                var tokenString = GenerateJSONWebToken(login);
-                response = Ok(new { token = tokenString });
-                return response;
+                var tokenString = GenerateJSONWebToken(login.Mobile);
+                return Ok(new { token = tokenString });
             }
             else
                 return StatusCode(401);
 
-
-
         }
 
-        private string GenerateJSONWebToken(LoginUserDto userInfo)
+        private string GenerateJSONWebToken(string mobile)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var claims = new[] {
 
-                new Claim(JwtRegisteredClaimNames.Email, userInfo.Mobile),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new Claim(JwtRegisteredClaimNames.NameId, mobile),
+                new Claim(JwtRegisteredClaimNames.UniqueName, Guid.NewGuid().ToString())
             };
 
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],
