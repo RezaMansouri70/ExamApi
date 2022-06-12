@@ -28,7 +28,7 @@ namespace DataLayer.SqlServer.Common
             dbContext.SaveChanges();
         }
 
-        public TEntity Get(int id)
+        public TEntity Get(long id)
         {
             return dbContext.Set<TEntity>().FirstOrDefault(c => c.Id == id);
         }

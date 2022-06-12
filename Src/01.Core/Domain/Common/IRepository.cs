@@ -13,7 +13,7 @@ namespace DomainClass.Common
         void Remove(TEntity entity);
         void Update(TEntity entity);
         void SaveChanges();
-        TEntity Get(int id);
+        TEntity Get(long id);
         IEnumerable<TEntity> GetAll();
         IQueryable<TEntity> GetQueryable();
 
