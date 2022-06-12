@@ -7,3 +7,6 @@ https://virgool.io/@reza.mansouri/%D9%BE%DB%8C%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8
 
 پیاده سازی پروژه API در دات نت ، قسمت سوم ، EndPoint توسط RestAPI
 https://virgool.io/@reza.mansouri/%D9%BE%DB%8C%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%BE%D8%B1%D9%88%DA%98%D9%87-api-%D8%AF%D8%B1-%D8%AF%D8%A7%D8%AA-%D9%86%D8%AA-%D9%82%D8%B3%D9%85%D8%AA-%D8%B3%D9%88%D9%85-endpoint-%D8%AA%D9%88%D8%B3%D8%B7-restapi-m3aeltxkr429
+
+پیاده سازی پروژه API در دات نت ، قسمت چهارم ، RestAPI Authentication Jwt
+https://virgool.io/@reza.mansouri/%D9%BE%DB%8C%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%BE%D8%B1%D9%88%DA%98%D9%87-api-%D8%AF%D8%B1-%D8%AF%D8%A7%D8%AA-%D9%86%D8%AA-%D9%82%D8%B3%D9%85%D8%AA-%DA%86%D9%87%D8%A7%D8%B1%D9%85-restapi-authentication-jwt-hday2s6owwmw
