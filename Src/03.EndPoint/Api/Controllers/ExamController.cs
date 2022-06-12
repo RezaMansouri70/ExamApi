@@ -20,16 +20,14 @@ namespace Api.Controllers
         [Authorize]
         public IActionResult Post([FromBody]AddUserExamDto addModel)
         {
-            var currentUser = HttpContext.User.Claims.First().Value;
-            var result = _userexamService.MakeExam(addModel, currentUser);
+            var result = _userexamService.MakeExam(addModel, getCurrentUserMobile());
             return StatusCode(201, result.Id);
         }
         [HttpGet("GetAll")]
         [Authorize]
         public IActionResult GetAll([FromQuery] string pageNumber= "1", string pageSize= "5")
         {
-            var currentUser = HttpContext.User.Claims.First().Value;
-            var result = _userexamService.GetExam( int.Parse( pageNumber), int.Parse( pageSize), currentUser);
+            var result = _userexamService.GetExam( int.Parse( pageNumber), int.Parse( pageSize), getCurrentUserMobile());
             return Ok(result);
         }
 
@@ -37,8 +35,7 @@ namespace Api.Controllers
         [Authorize]
         public IActionResult Update([FromBody] EditUserExamDto editModel)
         {
-            var currentUser = HttpContext.User.Claims.First().Value;
-            var result = _userexamService.Edit(editModel, currentUser);
+            var result = _userexamService.Edit(editModel, getCurrentUserMobile());
             return Ok(result.Id);
         }
 
@@ -46,9 +43,14 @@ namespace Api.Controllers
         [Authorize]
         public IActionResult Delete([FromQuery] int Id)
         {
-            var currentUser = HttpContext.User.Claims.First().Value;
-            var result = _userexamService.Delete(Id, currentUser);
+            var result = _userexamService.Delete(Id, getCurrentUserMobile());
             return Ok(result);
+        }
+        private string? getCurrentUserMobile() 
+        {
+            if (HttpContext.User.Claims.Any())
+                return HttpContext.User.Claims.First().Value;
+            return null;
         }
     }
 }
