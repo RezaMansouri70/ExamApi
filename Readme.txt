@@ -14,3 +14,7 @@ https://virgool.io/@reza.mansouri/%D9%BE%DB%8C%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8
 
 پیاده سازی پروژه API در دات نت ، قسمت پنجم ، عملیات CRUD در RestAPI
 https://virgool.io/@reza.mansouri/%D9%BE%DB%8C%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%BE%D8%B1%D9%88%DA%98%D9%87-api-%D8%AF%D8%B1-%D8%AF%D8%A7%D8%AA-%D9%86%D8%AA-%D9%82%D8%B3%D9%85%D8%AA-%D9%BE%D9%86%D8%AC%D9%85-%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-crud-%D8%AF%D8%B1-restapi-h48kzfnquxhb
+
+
+پیاده سازی پروژه API در دات نت ، قسمت پنجم ( قسمت آخر ) ، عملیات CRUD در RestAPI پارت دوم
+https://virgool.io/@reza.mansouri/%D9%BE%DB%8C%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%BE%D8%B1%D9%88%DA%98%D9%87-api-%D8%AF%D8%B1-%D8%AF%D8%A7%D8%AA-%D9%86%D8%AA-%D9%82%D8%B3%D9%85%D8%AA-%D9%BE%D9%86%D8%AC%D9%85-%D9%82%D8%B3%D9%85%D8%AA-%D8%A2%D8%AE%D8%B1-%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-crud-%D8%AF%D8%B1-restapi-%D9%BE%D8%A7%D8%B1%D8%AA-%D8%AF%D9%88%D9%85-js41fchikfgy
