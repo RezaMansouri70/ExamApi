@@ -2,7 +2,7 @@
 In English
 
 Implementing API Project In .NET Part 1 Onion Architecture
-
+https://medium.com/@rezamansouri/hi-everyone-71da93cce64b
 
 
 
