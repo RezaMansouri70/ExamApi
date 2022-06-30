@@ -4,6 +4,21 @@ In English
 Implementing API Project In .NET Part 1 Onion Architecture
 https://medium.com/@rezamansouri/hi-everyone-71da93cce64b
 
+Implementing API Project In .NET Part 2 , ApplicationServices and DataLayer
+https://medium.com/p/5ae2b60e0d05
+
+Implementing API Project In .NET Part 3 , Endpint With RestAPI
+https://medium.com/@rezamansouri/implementing-api-project-in-net-part-3-endpint-with-restapi-9b57a37be7c
+
+Implementing API Project In .NET Part 4 , RestAPI Authentication Jwt
+https://medium.com/@rezamansouri/implementing-api-project-in-net-part-4-restapi-authentication-jwt-608a91556bd1
+
+Implementing API Project In .NET Part 5 , CRUD In RestAPI
+https://medium.com/@rezamansouri/implementing-api-project-in-net-part-5-crud-in-restapi-8c47f0794296
+
+Implementing API Project In .NET Part 6(Last Part) , CRUD In RestAPI Part 2
+https://medium.com/@rezamansouri/implementing-api-project-in-net-part-6-last-part-crud-in-restapi-part-2-6d2aee70c8c2
+
 
 
 *************************************************************************************************************************
